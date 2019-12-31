@@ -20,6 +20,9 @@
     "doctrine/common": {
         "version": "v2.11.0"
     },
+    "doctrine/data-fixtures": {
+        "version": "1.4.0"
+    },
     "doctrine/dbal": {
         "version": "v2.10.0"
     },
@@ -36,6 +39,18 @@
             "./config/packages/prod/doctrine.yaml",
             "./src/Entity/.gitignore",
             "./src/Repository/.gitignore"
+        ]
+    },
+    "doctrine/doctrine-fixtures-bundle": {
+        "version": "3.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "fc52d86631a6dfd9fdf3381d0b7e3df2069e51b3"
+        },
+        "files": [
+            "./src/DataFixtures/AppFixtures.php"
         ]
     },
     "doctrine/doctrine-migrations-bundle": {
@@ -164,6 +179,9 @@
             "./config/packages/lexik_jwt_authentication.yaml"
         ]
     },
+    "liip/test-fixtures-bundle": {
+        "version": "1.6.0"
+    },
     "namshi/jose": {
         "version": "7.2.3"
     },
@@ -187,6 +205,9 @@
     },
     "psr/log": {
         "version": "1.1.2"
+    },
+    "symfony/browser-kit": {
+        "version": "v4.3.9"
     },
     "symfony/cache": {
         "version": "v4.3.9"
@@ -217,6 +238,9 @@
         "version": "v4.3.9"
     },
     "symfony/doctrine-bridge": {
+        "version": "v4.3.9"
+    },
+    "symfony/dom-crawler": {
         "version": "v4.3.9"
     },
     "symfony/dotenv": {
@@ -288,6 +312,22 @@
     },
     "symfony/orm-pack": {
         "version": "v1.0.7"
+    },
+    "symfony/phpunit-bridge": {
+        "version": "4.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.3",
+            "ref": "170be6250b77b421f02e986e2853df86c7bd6516"
+        },
+        "files": [
+            "./.env.test",
+            "./bin/phpunit",
+            "./config/bootstrap.php",
+            "./phpunit.xml.dist",
+            "./tests/.gitignore"
+        ]
     },
     "symfony/polyfill-intl-idn": {
         "version": "v1.13.1"
