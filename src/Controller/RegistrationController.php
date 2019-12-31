@@ -82,4 +82,26 @@ class RegistrationController extends AbstractFOSRestController
         return $this->view($user, Response::HTTP_CREATED)->setContext((new Context())->setGroups(['public']));
     }
 
+    /**
+     * @Rest\Head("/registration", name="registration_check")
+     * @param Request $request
+     * @return View
+     */
+    public function actionRegistrationEmail(Request $request)
+    {
+        $email = $request->get('email');
+        if (is_null($email) || empty($email)) {
+            return $this->view([], Response::HTTP_BAD_REQUEST);
+        }
+
+        $user = $this->userRepository->findOneBy([
+            'email' => $email,
+        ]);
+        if (is_null($user)) {
+            return $this->view([], Response::HTTP_NOT_FOUND);
+        }
+
+        return $this->view([],Response::HTTP_NO_CONTENT);
+    }
+
 }
