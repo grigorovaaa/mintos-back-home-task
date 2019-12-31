@@ -1,0 +1,39 @@
+{
+  "id": "tag:theregister.co.uk,2005:feed/theregister.co.uk/software/",
+  "updated": "1577799007",
+  "logo": "https://www.theregister.co.uk/Design/graphics/Reg_default/The_Register_r.png",
+  "title": "The Register - Software",
+  "link": "https://www.theregister.co.uk/software/",
+  "rights": "Copyright \u00a9 2019, Situation Publishing",
+  "author": {
+    "name": "Team Register",
+    "email": "Team Register",
+    "uri": "https://www.theregister.co.uk/odds/about/contact/"
+  },
+  "icon": "https://www.theregister.co.uk/Design/graphics/icons/favicon.png",
+  "subtitle": "Biting the hand that feeds IT \u2014 sci/tech news and views for the world",
+  "entryCollection": [
+    {
+      "id": "tag:theregister.co.uk,2005:story206326",
+      "updated": 1577799007,
+      "author": {
+        "name": "Richard Speed",
+        "uri": "https://search.theregister.co.uk/?author=Richard%20Speed"
+      },
+      "link": "https://go.theregister.co.uk/feed/www.theregister.co.uk/2019/12/31/y2k/",
+      "title": "Today's budget for application improvements is brought to you by the letters \"Y\", \"K\" and the number \"2\"",
+      "summary": "<h4>Slipping in the enhancements while everyone else is watching the calendar</h4> <p><strong>Y2K</strong>\u00a0 Welcome to Y2K, a series of tales from <i>Register</i> readers who found themselves at the sharp, pointy end of the turn of the century IT panic of two decades ago.\u2026</p>"
+    },
+    {
+      "id": "tag:theregister.co.uk,2005:story206328",
+      "updated": 1577732833,
+      "author": {
+        "name": "Richard Speed",
+        "uri": "https://search.theregister.co.uk/?author=Richard%20Speed"
+      },
+      "link": "https://go.theregister.co.uk/feed/www.theregister.co.uk/2019/12/30/y2k3/",
+      "title": "Remembering Y2K call-outs and the joy of the hourly contractor rate",
+      "summary": "<h4>We'll pay anything, <i>anything</i> - just don't turn that phone off</h4> <p><strong>Y2K</strong>\u00a0 There's a reason why some in IT remember the days of Y2K fondly. To quote a lyric from an erstwhile pop combo of the 80s, it really could be \"Money for Nothing\" for a lucky few. Welcome to <i>The Register's</i> reader recollections of the era.\u2026</p>"
+    }
+  ]
+}
