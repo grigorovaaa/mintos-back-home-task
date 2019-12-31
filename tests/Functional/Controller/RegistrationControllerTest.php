@@ -14,11 +14,6 @@ class RegistrationControllerTest extends WebTestCase
 {
     use FixturesTrait;
 
-    public static function setUpBeforeClass(): void
-    {
-        fwrite(STDOUT, __METHOD__ . "\n");
-    }
-
      /**
      * @dataProvider \App\Tests\Functional\Controller\DataProvider\HttpMethodDataProvider::methods()
       *
