@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Tests\Functional\Controller\DataProvider;
+namespace App\Tests\Functional\DataProvider;
 
 
 use Generator;

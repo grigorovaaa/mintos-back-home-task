@@ -14,8 +14,15 @@ class RegistrationControllerTest extends WebTestCase
 {
     use FixturesTrait;
 
+    public static function setUpBeforeClass(): void
+    {
+        (new self())->loadFixtures(array(
+            'App\DataFixtures\FunctionalTest\RegisterFixtures'
+        ));
+    }
+
      /**
-     * @dataProvider \App\Tests\Functional\Controller\DataProvider\HttpMethodDataProvider::methods()
+     * @dataProvider \App\Tests\Functional\DataProvider\HttpMethodDataProvider::methods()
       *
      * @param string $method
      */
@@ -93,10 +100,6 @@ class RegistrationControllerTest extends WebTestCase
      */
     public function dataProviderRegistration(): Generator
     {
-        $this->loadFixtures(array(
-            'App\DataFixtures\FunctionalTest\RegisterFixtures'
-        ));
-
         yield [null, null, Response::HTTP_CONFLICT, '{"message":"email cannot be null"}'];
         yield ['test@mail.ru', null, Response::HTTP_CONFLICT, '{"message":"password cannot be null"}'];
         // exists in fixture
@@ -111,10 +114,6 @@ class RegistrationControllerTest extends WebTestCase
      */
     public function dataProviderRegistrationCheck(): Generator
     {
-        $this->loadFixtures(array(
-            'App\DataFixtures\FunctionalTest\RegisterFixtures'
-        ));
-
         yield [null, Response::HTTP_BAD_REQUEST];
         yield ['testcheck@mail.ru', Response::HTTP_NOT_FOUND];
         // exists in fixture
