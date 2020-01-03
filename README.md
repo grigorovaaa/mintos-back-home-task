@@ -2,7 +2,7 @@
 
 ``` bash
 
-git clone git@github.com:grigorovaaa/mintos-back-home-task.git
+git clone https://github.com/grigorovaaa/mintos-back-home-task.git
 
 cd mintos-back-home-task
 
