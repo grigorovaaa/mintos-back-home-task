@@ -15,3 +15,11 @@ docker-compose exec php-fpm ./bin/console --no-interaction doctrine:migrations:m
 docker-compose exec php-fpm ./bin/console app:import-the-register-feed
 
 ```
+
+# tests
+``` bash
+
+docker-compose exec php-fpm ./bin/phpunit
+
+```
+
